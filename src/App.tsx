@@ -13,9 +13,12 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { UserContextProvider } from "./components/context/UserContext";
 import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
+import UserFetched from "./components/context/UserFetched";
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -63,6 +66,9 @@ function App() {
      <ThemeContextProvider>
       <Box/>
      </ThemeContextProvider>
+     <UserContextProvider>
+      <UserFetched/>
+     </UserContextProvider>
     </>
   )
 }
