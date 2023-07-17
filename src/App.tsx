@@ -21,6 +21,8 @@ import UserFetched from "./components/context/UserFetched";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import List from "./components/generics/List";
+import RandomNumbers from "./components/restriction/RandomNumbers";
+import Toast from "./components/templateLiterals/Toast";
 
 
 function App() {
@@ -77,7 +79,8 @@ function App() {
      <List items={['Batman','Superman','Wonderwoman']} onClick={(item) =>console.log(item)}/>
      <List items={[1,2,3,4,5,6]} onClick={(item) =>console.log(item)}/>
      {/* <List items={[{first:'Ade'},{first:'Bola'},{first:'Charles'},{first:'Daniel'},{first:'Esther'},{first:'Felix'}]} onClick={(item) =>console.log(item)}/> */}
-
+     <RandomNumbers value={20} isPositive={true} />
+     <Toast position="center"/>
     </>
   )
 }
