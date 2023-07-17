@@ -18,6 +18,8 @@ import Counter from "./components/state/Counter";
 import LoggedIn from "./components/state/LoggedIn";
 import User from "./components/state/User";
 import UserFetched from "./components/context/UserFetched";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 
 function App() {
@@ -69,6 +71,7 @@ function App() {
      <UserContextProvider>
       <UserFetched/>
      </UserContextProvider>
+     <Private isLoggedIn={true} Component={Profile}/>
     </>
   )
 }
