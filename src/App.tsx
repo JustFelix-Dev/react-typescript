@@ -76,6 +76,7 @@ function App() {
      {/* List */}
      <List items={['Batman','Superman','Wonderwoman']} onClick={(item) =>console.log(item)}/>
      <List items={[1,2,3,4,5,6]} onClick={(item) =>console.log(item)}/>
+     {/* <List items={[{first:'Ade'},{first:'Bola'},{first:'Charles'},{first:'Daniel'},{first:'Esther'},{first:'Felix'}]} onClick={(item) =>console.log(item)}/> */}
 
     </>
   )
