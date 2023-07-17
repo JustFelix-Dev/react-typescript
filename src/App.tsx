@@ -20,6 +20,7 @@ import User from "./components/state/User";
 import UserFetched from "./components/context/UserFetched";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
+import List from "./components/generics/List";
 
 
 function App() {
@@ -72,6 +73,10 @@ function App() {
       <UserFetched/>
      </UserContextProvider>
      <Private isLoggedIn={true} Component={Profile}/>
+     {/* List */}
+     <List items={['Batman','Superman','Wonderwoman']} onClick={(item) =>console.log(item)}/>
+     <List items={[1,2,3,4,5,6]} onClick={(item) =>console.log(item)}/>
+
     </>
   )
 }
